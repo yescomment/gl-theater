@@ -20,7 +20,7 @@ services:
       - "--entryPoints.https.address=:443"
       - "--certificatesResolvers.mytlschallenge.acme.httpChallenge=true"
       - "--certificatesResolvers.mytlschallenge.acme.httpChallenge.entryPoint=http"
-      - "--certificatesresolvers.mytlschallenge.acme.email=clemenko@gmail.com"
+      - "--certificatesresolvers.mytlschallenge.acme.email=j@cobford.com"
       - "--certificatesresolvers.mytlschallenge.acme.storage=/opt/traefik/acme.json"
     labels:
       # Dashboard
@@ -69,7 +69,7 @@ services:
     ports:
       - "1935:1935"
     labels:
-      - "traefik.http.routers.owncast.rule=Host(`stream.ieacro.com`)"
+      - "traefik.http.routers.owncast.rule=Host(`theater.geistlist.email`)"
       - "traefik.http.routers.owncast.entrypoints=https"
       - "traefik.http.routers.owncast.tls.certresolver=mytlschallenge"
       - "traefik.http.services.owncast.loadbalancer.server.port=8080"
