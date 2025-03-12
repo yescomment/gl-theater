@@ -61,7 +61,7 @@ services:
       - "/opt/traefik/:/opt/traefik/"
 
   owncast:
-    image: gabekangas/owncast #ghcr.io/owncast/owncast:nightly
+    image: owncast/owncast:latest
     container_name: "owncast"
     restart: unless-stopped
     security_opt:
