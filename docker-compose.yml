@@ -44,7 +44,7 @@ services:
       - "traefik.http.middlewares.servicestls.headers.stspreload=true"
       - "traefik.http.middlewares.servicestls.headers.stsseconds=15552001"
       - "traefik.http.middlewares.servicestls.headers.isdevelopment=false"
-      
+
       # middleware: Basic Auth
       - "traefik.http.middlewares.https-auth.basicauth.users=admin:$$apr1$$VkNnnQVA$$nvOkZfQiOtK9XHgm3lvCD1"
 
